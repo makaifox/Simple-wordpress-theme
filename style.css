@@ -1,0 +1,163 @@
+/*
+Theme Name: TBB_Theme
+Author: Yury Trindade
+Description: Tema criado como teste
+Version: 1.0
+*/
+
+* {
+  box-sizing: border-box;
+
+}
+ul li {
+  list-style: none !important;
+
+}
+
+.admin-bar  {
+  padding-top: 32px !important;
+}
+
+@media only screen and (max-width: 782px) {
+  
+  .admin-bar  {
+    padding-top: 46px !important;
+  }
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 4px 16px #00000014;
+  padding: unset !important;
+  min-height: 70px;
+}
+
+.navbar-nav {
+  padding: 30px;
+}
+
+.searchButton, .navbar-toggler, .search input[type=search] {
+  background: none;
+  border: none;
+  margin: 0 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.logo {
+  height: 58px;
+  width: auto;
+}
+.search 
+.dropdown-menu {
+  left: -16rem;
+}
+.search input[type=submit]{
+  border: none;
+  padding: 8px;
+  background-color:#389CD6 ;
+  border-radius: 20px;
+  color: #fff;
+}
+
+nav .menu-drop {
+  height: 100vh;
+  background-color:#389CD6 ;
+  position: static;
+}
+
+#menu-header-menu .menu-item {
+  padding: 15px 20px;
+}
+
+#menu-desktop-menu {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 49px;
+  margin: auto;
+}
+
+#menu-desktop-menu .menu-item {
+  padding: 22px 25px;
+
+}
+
+nav .menu-drop a,footer a,.desktop-navbar a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.desktop-navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #389CD6;
+}
+
+footer {
+  background-color: #389CD6;
+}
+
+#menu-footer-menu {
+  padding: 0 !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .menu-item {
+border-bottom: 3px solid #fff; 
+padding: 29px 0;
+max-width: 120px;
+margin: auto;
+}
+
+.footerLogo {
+  height: 29px;
+  width: auto;
+}
+
+footer .brand .col-12 {
+  margin-top: 64px;
+  margin-bottom: 100px;
+}
+
+@media(min-width: 988px) {
+
+  #menu-footer-menu {
+  flex-direction:row;
+  margin: 40px 0 50px 0;
+  }
+
+  .logo {
+    margin-left: 40%;
+
+  }
+  footer .menu-item {
+    display: inline;
+    padding:  0 24px;
+    border-right: 3px solid #fff;
+    border-bottom: unset; 
+    max-width: 165px;
+    margin: 0;
+  }
+  footer .menu-item:last-child {
+    border-right: unset;
+  }
+
+  footer .brand .col-12 {
+    margin-bottom: 64px;
+  }
+}
